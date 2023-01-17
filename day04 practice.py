@@ -1,44 +1,43 @@
-# 7.1
-year_lists = [2001, 2002, 2003, 2004, 2005]
+# 8.1
+e2f = {"dog": "chien", "cat": "chat", "walrus": "morse"}
+print(e2f)
 
-# 7.2
-print(year_lists[2])
+# 8.2
+print(e2f["walrus"])
 
-# 7.3
-year_lists.sort()
-print(year_lists[-1])
+# 8.3
+temp = list(e2f.items())
+print(temp)
+print(temp[1])
+f2e = {temp[i][1]: temp[i][0] for i in range(0,len(temp))}
+print(f2e)
 
-# 7.4
-things = ["mozzarella", "cinderella", "salmonella"]
 
-# 7.8
-surprise = ["Groucho", "Chico", "Harpo"]
-print(surprise)
+# 8.4
 
-# 7.9
-surprise[-1] = surprise[-1].lower()
-print(surprise)
-surprise[-1] = surprise[-1][-1::-1].capitalize()
-print(surprise)
 
-# 7.10
-list = [n for n in range(1, 10) if n % 2 == 0]
-print(list)
+# 8.5
+print(e2f.keys())
 
-# 7.11
-start1 = ["fee", "fie", "foe"]
-rhymes = [
-    ("flop", "get a mop"),
-    ("fope", "turn the rope"),
-    ("fa", "get your ma"),
-    ("fudge", "call the judge"),
-    ("fat", "pet the cat"),
-    ("fog", "walk the dog"),
-    ("fun", "say we're done")
-    ]
-start2 = "Someone better"
-for i in (0, len(rhymes)-1):
-    for s1 in start1:
-        print(s1.capitalize(), end='! ')
-    print(rhymes[i][0].capitalize() + "!")
-    print(f"{start2} {rhymes[i][1]}.")
+# 8.6
+life = {'animals': {'cats': 'Henri', 'octopi': 'Grumpy', 'emus': 'Lucy'},
+        'plants': {},
+        'other': {}
+        }
+
+# 8.7
+print("\n8.7")
+print(life.keys())
+
+# 8.8
+print("\n8.8")
+print(life['animals'].keys())
+
+# 8.9
+print("\n8.9")
+print(life['animals']['cats'])
+
+# 8.10
+print("\n8.10")
+squares = {k: k**2 for k in range(10)}
+print(squares)
