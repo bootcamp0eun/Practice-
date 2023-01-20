@@ -1,24 +1,25 @@
-# 10.8
-print('# 10.8')
-class Element:
-    def __init__(self, name, symbol, number):
-        self.__name = name
-        self.__symbol = symbol
-        self.__number = number
-
-    @property
-    def name(self):
-        return self.__name
-
-    @property
-    def symbol(self):
-        return self.__symbol
-
-    @property
-    def number(self):
-        return self.__number
+# 10.9
+print('# 10.9')
+class Bear:
+    def eats(self):
+        return "berries"
 
 
-hydrogen = Element('Hydrogen', 'H', 1)
-print(hydrogen)
-print(hydrogen.name, hydrogen.symbol, hydrogen.number)
+class Rabbit:
+    def eats(self):
+        return "clover"
+
+
+class Octothorpe:
+    def eats(self):
+        return "campers"
+
+
+
+b = Bear()
+r = Rabbit()
+o = Octothorpe()
+
+print(b.eats())
+print(r.eats())
+print(o.eats())
